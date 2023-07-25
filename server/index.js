@@ -1,10 +1,3 @@
-// import path from 'path';
-// import { fileURLToPath } from 'url';
-
-// const __filename = fileURLToPath(import.meta.url);
-
-// const __dirname = path.dirname(__filename);
-
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -27,7 +20,7 @@ const path = require("path");
 // '/admin' serve the files at client-admin/build/* as static files
 app.use(
   "/admin",
-  express.static(path.re_solve(__dirname, "../client-admin/build"))
+  express.static(path.resolve(__dirname, "../client-admin/build"))
 );
 app.get("admin/*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../client-admin/build", "index.html"));
