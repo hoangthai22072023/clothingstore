@@ -6,7 +6,7 @@ class Home extends Component {
       <div className="align-center">
         <h2 className="text-center">ADMIN HOME</h2>
         <img
-          src="https://giphy.com/gifs/pokemon-sweet-pikachu-39GAXpLVKvYRO"
+          src="https://giphy.com/gifs/kawaii-pikachu-pika-vpawfuA6LnYeQ"
           width="800px"
           height="600px"
           alt=""
